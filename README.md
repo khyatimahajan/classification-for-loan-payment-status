@@ -1,2 +1,8 @@
-# classification-for-loan-payment-status
-Applying 4 main classification algorithms to perform binary classification to model loan payment status.
+# Classification for Loan Payment Status
+Performing 4 main types of Binary Classification to model [loan payment status data](https://www.kaggle.com/zaurbegiev/my-dataset) from Kaggle.
+
+The main algorithms used are:
+1. Pocket algorithm: The Pocket algorithm is a variant of the perceptron algorithm. The perceptron algorithm is a classifier that applies a step function to classify the input data. It goes through all data points, updating weights to fit the training data. However, when the data is not clearly separable, or even otherwise when the iterations are limited, the perceptron algorithm is not guaranteed to converge, and may not return the most optimal weights. The pocket algorithm improves upon this by saving the best weights learned so far in a "pocket".
+2. Quadratic Discriminant Analysis: Discriminant Analysis uses the Bayes theorem to classify inputs. The likelihood function is modeled as a Gaussian distribution for its properties of being a smooth function for derivative analysis and the central limit theorem.
+3. Linear Discriminant Analysis: QDA maintains the covariance matrix for each class, which is computationally expensive. Also since it is quadratic in nature, if the data is undersampled, this could lead to overfitting of the class boundary. The LDA model overcomes these shortcomings by using the same covariance of all classes.
+4. Logistic Regression: When dealing with multiple classes, the least squares method to fit regression for classification might fail due to imbalanced datasets causing one class estimation to be masked by other predictions. Logistic regression predicts _P(T=k|x)_ instead of predicting the class label _k_.
